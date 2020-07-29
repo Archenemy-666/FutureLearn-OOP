@@ -42,5 +42,8 @@ for movement in range (100) :
     arc.forward(randint(1,5))
     anu.forward(randint(1,5))   
 
+print("done")
+
+
    
 
