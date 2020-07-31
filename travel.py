@@ -32,7 +32,7 @@ ballroom.get_details()
 
 current_room = kitchen
 current_item = forks
-print("hello")
+print("hello1")
 while True:
   print("\n")
   current_room.get_details()
