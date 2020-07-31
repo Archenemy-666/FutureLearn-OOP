@@ -18,7 +18,7 @@ dininghall.set_description("very symmetrical place to eat")
 
 knife.location(forks,"south")
 forks.location(knife,"north")
-forks.location(cleats,"west")
+forks.location(cleats,"west")       
 cleats.location(forks,"east")
 kitchen.link_room(dininghall,"south")
 dininghall.link_room(kitchen,"north")
