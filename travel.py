@@ -39,9 +39,9 @@ sid.describe()
 sid.set_conversation("I lurk in the darkness")
 #sid.talk()
 sid.set_weakness('light')
-#sid.get_weakness()
-#x = input()
-#sid.fight(x)
+sid.get_weakness()
+x = input("your weapon of choice : ")
+
 
 #dont add quote
 dininghall.set_character(sid)
@@ -54,8 +54,11 @@ while True:
   #current_item.get_idetails()
   inhabitant = current_room.get_character()
   if inhabitant is not None:
+    inhabitant.talk()
     inhabitant.describe()
-
+    inhabitant.fight(x)
+    if(inhabitant.fight(x) != "I'M BATMAN you are NOOB"):
+      break
     
   command = input("dirction please :")
   current_room = current_room.move(command)
