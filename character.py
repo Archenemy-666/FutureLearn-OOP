@@ -43,6 +43,6 @@ class Enemy(Character):
     
     def fight(self,combat_item):
         if combat_item == self.weakness:
-            print("I'M BATMAN you are NOOOB")
+            print("I'M BATMAN enemy is NOOOB")
         else : 
             print("WASTED dimwit")
